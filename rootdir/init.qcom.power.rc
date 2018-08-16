@@ -1,3 +1,5 @@
+import /init.spectrum.rc
+
 on boot
     # Set RPS mask
     write /sys/class/net/rmnet0/queues/rx-0/rps_cpus 2

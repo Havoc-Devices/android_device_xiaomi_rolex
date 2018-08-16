@@ -26,3 +26,8 @@ include $(DEVICE_PATH)/product/*.mk
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/rolex/rolex-vendor.mk)
+
+# Spectrum
+PRODUCT_PACKAGES += \
+    init.spectrum.rc \
+    init.spectrum.sh
